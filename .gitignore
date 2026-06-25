@@ -1,0 +1,55 @@
+# Secrets
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pywz
+*.py[co]
+*.so
+*.dll
+*.dylib
+venv/
+env/
+ENV/
+.venv/
+.venv/
+venv.bak/
+env.bak/
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# Databases
+*.db
+*.sqlite3
+*.sqlite
+*.db-journal
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.iml
+.project
+.pydevproject
+.settings/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
