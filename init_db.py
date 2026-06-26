@@ -1,11 +1,8 @@
 from database import db
 
 def init_database():
-    """Инициализация базы данных"""
     print("📦 Создание структуры базы данных...")
     
-    # База данных создаётся автоматически при инициализации Database
-    # Но мы можем проверить, что все таблицы созданы
     try:
         db.cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
         tables = db.cursor.fetchall()
@@ -13,6 +10,10 @@ def init_database():
         
         for table in tables:
             print(f"   - {table[0]}")
+        
+        # Проверяем достижения
+        achievements = db.get_all_achievements()
+        print(f"✅ Загружено достижений: {len(achievements)}")
         
         print("✅ База данных инициализирована успешно!")
         
